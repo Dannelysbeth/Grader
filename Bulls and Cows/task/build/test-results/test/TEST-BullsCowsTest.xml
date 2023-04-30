@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BullsCowsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-30T23:41:58" hostname="LEGIONDF" time="0.075">
+  <properties/>
+  <testcase name="start" classname="BullsCowsTest" time="0.075"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+> 3601
+Grade: 1 bull(s) and 1 cow(s). The secret code is 9305.
+?[0;34mWhy 9305? Make your own secret number :)
+?[1;31m
+Start test 2?[0m
+> 9305
+Grade: 4 bull(s) and 0 cow(s). The secret code is 9305.
+?[0;34mWhy 9305? Make your own secret number :)
+?[1;31m
+Start test 3?[0m
+> 1246
+Grade: None. The secret code is 9305.
+?[0;34mWhy 9305? Make your own secret number :)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
