@@ -6,7 +6,7 @@ public class Main {
     static int cows = 0;
     static int bulls = 0;
 
-    static String secretKey = "";
+    static String secretKey = null;
 
     final static int CODE_LENGTH = 4;
 
@@ -24,9 +24,8 @@ public class Main {
             System.out.println("Error: can't generate a secret number with a length of 11 because there aren't enough unique digits.");
         } else {
             generateRandomNumber(digitNum);
-            System.out.printf("The random secret number is %s.", secretKey);
+            System.out.printf("The random secret number is %s.\n", secretKey);
         }
-
 
 
     }
@@ -46,10 +45,28 @@ public class Main {
     }
 
     public static void generateRandomNumber(int digitNumber) {
-        String pseudoRandomNumber = String.valueOf(System.nanoTime());
-        for (int i = digitNumber; i > 0; i--) {
-            secretKey = secretKey + pseudoRandomNumber.charAt(i);
+        while (secretKey == null || secretKey.length() < digitNumber) {
+            String pseudoRandomNumber = String.valueOf(System.nanoTime());
+            if (secretKey == null) {
+                int i = pseudoRandomNumber.length() - 1;
+                while(Character.getNumericValue(pseudoRandomNumber.charAt(i)) == 0) {
+                    i--;
+                }
+                secretKey = String.valueOf(pseudoRandomNumber.charAt(i));
+            }
+            for (int i = pseudoRandomNumber.length() - 1; i >= 0; i--) {
+                if (secretKey.length() == digitNumber) {
+                    return;
+                }
+                for (int j = 0; j < secretKey.length(); j++) {
+                    if (secretKey.charAt(j) == pseudoRandomNumber.charAt(i)) {
+                        break;
+                    } else if (j == secretKey.length() - 1) {
+                        secretKey = secretKey + pseudoRandomNumber.charAt(i);
+                        break;
+                    }
+                }
+            }
         }
-
     }
 }

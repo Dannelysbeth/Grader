@@ -129,19 +129,8 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/5431#comment
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Wrong answer in test #1
-
-    Digits in the generated number are not unique.
-
-    Please find below the output of your program during this failed test.
-    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
-
-    ---
-
-    &gt; 4
-    The random secret number is 9100.
-  time: "Tue, 02 May 2023 21:58:50 UTC"
+  message: Congratulations!
+  time: "Tue, 02 May 2023 23:12:20 UTC"
 record: -1
