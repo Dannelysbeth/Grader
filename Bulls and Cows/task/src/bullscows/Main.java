@@ -16,7 +16,7 @@ public class Main {
         if (digitNum > 10) {
             System.out.println("Error: can't generate a secret number with a length of 11 because there aren't enough unique digits.");
         } else {
-            generateRandomNumber(digitNum);
+            generateRandomNumberSimple(digitNum);
             System.out.println("Okay, let's start a game! ");
             int turn = 1;
             while (bulls != digitNum) {
@@ -49,6 +49,13 @@ public class Main {
                 }
             }
         }
+    }
+
+    public static void generateRandomNumberSimple(int digitNumber) {
+
+        int range = (100 * digitNumber -1) - (10 * digitNumber) + 1;
+
+        secretKey = String.valueOf((int) Math.random() * range + (10 * digitNumber) + 1);
     }
 
     public static void generateRandomNumber(int digitNumber) {

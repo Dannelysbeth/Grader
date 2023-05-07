@@ -256,5 +256,17 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/5433#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: "Wrong answer in test #2\n\nOutput should contain 4 bulls summarized as\
+    \ every option was tried. Found: 2\n\nPlease find below the output of your program\
+    \ during this failed test.\nNote that the &#39;&gt;&#39; character indicates the\
+    \ beginning of the input line.\n\n---\n\nPlease, enter the secret code&#39;s length:\n\
+    &gt; 4\nOkay, let&#39;s start a game! \nTurn 1:\n&gt; 0000\nGrade: None\nTurn\
+    \ 2:\n&gt; 1111\nGrade: 1 bull(s) and 3 cow(s).\nTurn 3:\n&gt; 2222\nGrade: None\n\
+    Turn 4:\n&gt; 3333\nGrade: None\nTurn 5:\n&gt; 4444\nGrade: 1 bull(s) and 3 cow(s).\n\
+    Turn 6:\n&gt; 5555\nGrade: None\nTurn 7:\n&gt; 6666\nGrade: None\nTurn 8:\n&gt;\
+    \ 7777\nGrade: None\nTurn 9:\n&gt; 8888\nGrade: None\nTurn 10:\n&gt; 9999\nGrade:\
+    \ None\nTurn 11:"
+  time: "Sun, 07 May 2023 21:58:21 UTC"
 record: -1
