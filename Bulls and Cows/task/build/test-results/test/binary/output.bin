@@ -8,7 +8,31 @@
 Grade: None
 Turn 2:
 > 1
-Grade: 1 bull(s) and 1 cow(s).
+Grade: None
+Turn 3:
+> 2
+Grade: None
+Turn 4:
+> 3
+Grade: None
+Turn 5:
+> 4
+Grade: None
+Turn 6:
+> 5
+Grade: None
+Turn 7:
+> 6
+Grade: None
+Turn 8:
+> 7
+Grade: None
+Turn 9:
+> 8
+Grade: None
+	Turn 10:
+> 9
+Grade: 1 bull(s) and 0 cow(s).
 /Congratulations! You guessed the secret code.
 [1;31m
 Start test 2[0m
@@ -26,7 +50,7 @@
 Grade: None
 Turn 4:
 > 3333
-Grade: None
+Grade: 1 bull(s) and 3 cow(s).
 Turn 5:
 > 4444
 Grade: 1 bull(s) and 3 cow(s).
@@ -38,11 +62,52 @@
 Grade: None
 Turn 8:
 > 7777
+Grade: 1 bull(s) and 3 cow(s).
+Turn 9:
+> 1347
+Grade: 4 bull(s) and 0 cow(s).
+/Congratulations! You guessed the secret code.
+[1;31m
+Start test 3[0m
+)Please, enter the secret code's length:
+> 6
+Okay, let's start a game! 
+Turn 1:
+	> 000000
+Grade: None
+Turn 2:
+	> 111111
+Grade: 1 bull(s) and 5 cow(s).
+Turn 3:
+	> 222222
+Grade: None
+Turn 4:
+	> 333333
+Grade: 1 bull(s) and 5 cow(s).
+Turn 5:
+	> 444444
+Grade: 1 bull(s) and 5 cow(s).
+Turn 6:
+	> 555555
+Grade: None
+Turn 7:
+	> 666666
+Grade: 1 bull(s) and 5 cow(s).
+Turn 8:
+	> 777777
 Grade: None
 Turn 9:
-> 8888
-Grade: None
+	> 888888
+Grade: 1 bull(s) and 5 cow(s).
 	Turn 10:
-> 9999
-Grade: None
+	> 999999
+Grade: 1 bull(s) and 5 cow(s).
 	Turn 11:
+	> 134689
+Grade: 6 bull(s) and 0 cow(s).
+/Congratulations! You guessed the secret code.
+[1;31m
+Start test 4[0m
+)Please, enter the secret code's length:
+> 11
+fError: can't generate a secret number with a length of 11 because there aren't enough unique digits.

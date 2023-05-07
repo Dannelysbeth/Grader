@@ -1,6 +1,8 @@
 package bullscows;
 
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
     static int cows = 0;
@@ -52,10 +54,15 @@ public class Main {
     }
 
     public static void generateRandomNumberSimple(int digitNumber) {
+        Set<Integer> digits =  new HashSet<>();
+        secretKey = "";
+        while(digits.size() < digitNumber) {
+            digits.add((int) (Math.random() * 10));
+        }
+        digits.forEach(d -> {
+            secretKey += d;
+        });
 
-        int range = (100 * digitNumber -1) - (10 * digitNumber) + 1;
-
-        secretKey = String.valueOf((int) Math.random() * range + (10 * digitNumber) + 1);
     }
 
     public static void generateRandomNumber(int digitNumber) {
