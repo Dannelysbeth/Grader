@@ -13,7 +13,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please, enter the secret code's length:");
+        System.out.println("Input the length of the secret code:");
+        int codeLength = scanner.nextInt();
+        System.out.println("Input the number of possible symbols in the code:");
         int digitNum = scanner.nextInt();
         if (digitNum > 10) {
             System.out.println("Error: can't generate a secret number with a length of 11 because there aren't enough unique digits.");
