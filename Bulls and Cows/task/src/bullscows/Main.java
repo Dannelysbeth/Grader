@@ -14,14 +14,28 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Input the length of the secret code:");
-        int codeLength = scanner.nextInt();
-        System.out.println("Input the number of possible symbols in the code:");
         int digitNum = scanner.nextInt();
-        if (digitNum > 10) {
-            System.out.println("Error: can't generate a secret number with a length of 11 because there aren't enough unique digits.");
+
+        System.out.println("Input the number of possible symbols in the code:");
+        int charAmount = scanner.nextInt();
+        if (digitNum > charAmount) {
+            System.out.printf("Error: can't generate a secret number with a length of %d because there only %d characters selected.\n", digitNum, charAmount);
         } else {
-            generateRandomNumberSimple(digitNum);
-            System.out.println("Okay, let's start a game! ");
+            generateRandomNumberSimple(digitNum, charAmount);
+            String stars = "*";
+            for (int i = 0; i < digitNum - 1; i++) {
+                stars += "*";
+            }
+//            char maxSymbol = charAmount > 10 ? charAmount +
+            if (charAmount > 10) {
+                char maxSymbol = (char) (96 + charAmount - 10);
+                System.out.printf("The secret is prepared: %s (0-9, a-%c).\n", stars, maxSymbol);
+            } else {
+                int maxSymbol = charAmount - 1;
+                System.out.printf("The secret is prepared: %s (0-%d).\n", stars, maxSymbol);
+            }
+
+            System.out.println("Okay, let's start a game!");
             int turn = 1;
             while (bulls != digitNum) {
                 System.out.printf("Turn %d:\n", turn);
@@ -39,6 +53,7 @@ public class Main {
 
     }
 
+
     public static void grader(char[] secretCode, char[] userCode) {
         cows = 0;
         bulls = 0;
@@ -55,11 +70,13 @@ public class Main {
         }
     }
 
-    public static void generateRandomNumberSimple(int digitNumber) {
-        Set<Integer> digits =  new HashSet<>();
+    public static void generateRandomNumberSimple(int digitNumber, int charAmount) {
+        Set<Character> digits = new HashSet<>();
         secretKey = "";
-        while(digits.size() < digitNumber) {
-            digits.add((int) (Math.random() * 10));
+        while (digits.size() < digitNumber) {
+            int charValue = (int) (Math.random() * charAmount);
+            charValue = charValue > 10 ? charValue + 87 : charValue + 48;
+            digits.add((char) charValue);
         }
         digits.forEach(d -> {
             secretKey += d;

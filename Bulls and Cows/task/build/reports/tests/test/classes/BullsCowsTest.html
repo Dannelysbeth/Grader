@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.120s</div>
+<div class="counter">0.375s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">start</td>
-<td class="success">0.120s</td>
+<td class="success">0.375s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -89,9 +89,12 @@
 <span class="code">
 <pre>?[1;31m
 Start test 1?[0m
-Please, enter the secret code's length:
+Input the length of the secret code:
 &gt; 1
-Okay, let's start a game! 
+Input the number of possible symbols in the code:
+&gt; 10
+The secret is prepared: * (0-9).
+Okay, let's start a game!
 Turn 1:
 &gt; 0
 Grade: None
@@ -115,64 +118,70 @@ Turn 7:
 Grade: None
 Turn 8:
 &gt; 7
-Grade: None
-Turn 9:
-&gt; 8
-Grade: None
-Turn 10:
-&gt; 9
 Grade: 1 bull(s) and 0 cow(s).
 Congratulations! You guessed the secret code.
 ?[1;31m
 Start test 2?[0m
-Please, enter the secret code's length:
+Input the length of the secret code:
 &gt; 4
-Okay, let's start a game! 
+Input the number of possible symbols in the code:
+&gt; 10
+The secret is prepared: **** (0-9).
+Okay, let's start a game!
 Turn 1:
 &gt; 0000
 Grade: None
 Turn 2:
 &gt; 1111
-Grade: 1 bull(s) and 3 cow(s).
+Grade: None
 Turn 3:
 &gt; 2222
-Grade: None
+Grade: 1 bull(s) and 3 cow(s).
 Turn 4:
 &gt; 3333
 Grade: 1 bull(s) and 3 cow(s).
 Turn 5:
 &gt; 4444
-Grade: 1 bull(s) and 3 cow(s).
+Grade: None
 Turn 6:
 &gt; 5555
 Grade: None
 Turn 7:
 &gt; 6666
-Grade: None
+Grade: 1 bull(s) and 3 cow(s).
 Turn 8:
 &gt; 7777
-Grade: 1 bull(s) and 3 cow(s).
+Grade: None
 Turn 9:
-&gt; 1347
+&gt; 8888
+Grade: None
+Turn 10:
+&gt; 9999
+Grade: 1 bull(s) and 3 cow(s).
+Turn 11:
+&gt; 2369
 Grade: 4 bull(s) and 0 cow(s).
 Congratulations! You guessed the secret code.
 ?[1;31m
 Start test 3?[0m
-Please, enter the secret code's length:
+Input the length of the secret code:
 &gt; 6
-Okay, let's start a game! 
+Input the number of possible symbols in the code:
+&gt; 10
+The secret is prepared: ****** (0-9).
+Okay, let's start a game!
 Turn 1:
 &gt; 000000
-Grade: None
+Grade: 1 bull(s) and 5 cow(s).
 Turn 2:
 &gt; 111111
 Grade: 1 bull(s) and 5 cow(s).
 Turn 3:
 &gt; 222222
-Grade: None
+Grade: 1 bull(s) and 5 cow(s).
 Turn 4:
 &gt; 333333
-Grade: 1 bull(s) and 5 cow(s).
+Grade: None
 Turn 5:
 &gt; 444444
 Grade: 1 bull(s) and 5 cow(s).
@@ -184,22 +193,638 @@ Turn 7:
 Grade: 1 bull(s) and 5 cow(s).
 Turn 8:
 &gt; 777777
-Grade: None
+Grade: 1 bull(s) and 5 cow(s).
 Turn 9:
-&gt; 888888
-Grade: 1 bull(s) and 5 cow(s).
-Turn 10:
-&gt; 999999
-Grade: 1 bull(s) and 5 cow(s).
-Turn 11:
-&gt; 134689
+&gt; 012467
 Grade: 6 bull(s) and 0 cow(s).
 Congratulations! You guessed the secret code.
 ?[1;31m
 Start test 4?[0m
-Please, enter the secret code's length:
-&gt; 11
-Error: can't generate a secret number with a length of 11 because there aren't enough unique digits.
+Input the length of the secret code:
+&gt; 4
+Input the number of possible symbols in the code:
+&gt; 16
+The secret is prepared: **** (0-9, a-f).
+Okay, let's start a game!
+Turn 1:
+&gt; 0000
+Grade: None
+Turn 2:
+&gt; 1111
+Grade: None
+Turn 3:
+&gt; 2222
+Grade: None
+Turn 4:
+&gt; 3333
+Grade: 1 bull(s) and 3 cow(s).
+Turn 5:
+&gt; 4444
+Grade: None
+Turn 6:
+&gt; 5555
+Grade: None
+Turn 7:
+&gt; 6666
+Grade: None
+Turn 8:
+&gt; 7777
+Grade: 1 bull(s) and 3 cow(s).
+Turn 9:
+&gt; 8888
+Grade: 1 bull(s) and 3 cow(s).
+Turn 10:
+&gt; 9999
+Grade: None
+Turn 11:
+&gt; aaaa
+Grade: None
+Turn 12:
+&gt; bbbb
+Grade: None
+Turn 13:
+&gt; cccc
+Grade: None
+Turn 14:
+&gt; dddd
+Grade: None
+Turn 15:
+&gt; eeee
+Grade: None
+Turn 16:
+&gt; ffff
+Grade: 1 bull(s) and 3 cow(s).
+Turn 17:
+&gt; 378f
+Grade: 1 bull(s) and 3 cow(s).
+Turn 18:
+&gt; 738f
+Grade: 0 bull(s) and 4 cow(s).
+Turn 19:
+&gt; 837f
+Grade: 1 bull(s) and 3 cow(s).
+Turn 20:
+&gt; 387f
+Grade: 2 bull(s) and 2 cow(s).
+Turn 21:
+&gt; 783f
+Grade: 0 bull(s) and 4 cow(s).
+Turn 22:
+&gt; 873f
+Grade: 0 bull(s) and 4 cow(s).
+Turn 23:
+&gt; f738
+Grade: 1 bull(s) and 3 cow(s).
+Turn 24:
+&gt; 7f38
+Grade: 2 bull(s) and 2 cow(s).
+Turn 25:
+&gt; 3f78
+Grade: 4 bull(s) and 0 cow(s).
+Congratulations! You guessed the secret code.
+?[1;31m
+Start test 5?[0m
+Input the length of the secret code:
+&gt; 6
+Input the number of possible symbols in the code:
+&gt; 36
+The secret is prepared: ****** (0-9, a-z).
+Okay, let's start a game!
+Turn 1:
+&gt; 000000
+Grade: None
+Turn 2:
+&gt; 111111
+Grade: None
+Turn 3:
+&gt; 222222
+Grade: None
+Turn 4:
+&gt; 333333
+Grade: None
+Turn 5:
+&gt; 444444
+Grade: None
+Turn 6:
+&gt; 555555
+Grade: None
+Turn 7:
+&gt; 666666
+Grade: None
+Turn 8:
+&gt; 777777
+Grade: None
+Turn 9:
+&gt; 888888
+Grade: None
+Turn 10:
+&gt; 999999
+Grade: 1 bull(s) and 5 cow(s).
+Turn 11:
+&gt; aaaaaa
+Grade: None
+Turn 12:
+&gt; bbbbbb
+Grade: None
+Turn 13:
+&gt; cccccc
+Grade: 1 bull(s) and 5 cow(s).
+Turn 14:
+&gt; dddddd
+Grade: None
+Turn 15:
+&gt; eeeeee
+Grade: 1 bull(s) and 5 cow(s).
+Turn 16:
+&gt; ffffff
+Grade: None
+Turn 17:
+&gt; gggggg
+Grade: None
+Turn 18:
+&gt; hhhhhh
+Grade: 1 bull(s) and 5 cow(s).
+Turn 19:
+&gt; iiiiii
+Grade: None
+Turn 20:
+&gt; jjjjjj
+Grade: None
+Turn 21:
+&gt; kkkkkk
+Grade: None
+Turn 22:
+&gt; llllll
+Grade: None
+Turn 23:
+&gt; mmmmmm
+Grade: None
+Turn 24:
+&gt; nnnnnn
+Grade: None
+Turn 25:
+&gt; oooooo
+Grade: 1 bull(s) and 5 cow(s).
+Turn 26:
+&gt; pppppp
+Grade: None
+Turn 27:
+&gt; qqqqqq
+Grade: None
+Turn 28:
+&gt; rrrrrr
+Grade: None
+Turn 29:
+&gt; ssssss
+Grade: None
+Turn 30:
+&gt; tttttt
+Grade: None
+Turn 31:
+&gt; uuuuuu
+Grade: None
+Turn 32:
+&gt; vvvvvv
+Grade: None
+Turn 33:
+&gt; wwwwww
+Grade: None
+Turn 34:
+&gt; xxxxxx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 35:
+&gt; 9cehox
+Grade: 0 bull(s) and 6 cow(s).
+Turn 36:
+&gt; c9ehox
+Grade: 1 bull(s) and 5 cow(s).
+Turn 37:
+&gt; e9chox
+Grade: 0 bull(s) and 6 cow(s).
+Turn 38:
+&gt; 9echox
+Grade: 1 bull(s) and 5 cow(s).
+Turn 39:
+&gt; ce9hox
+Grade: 2 bull(s) and 4 cow(s).
+Turn 40:
+&gt; ec9hox
+Grade: 0 bull(s) and 6 cow(s).
+Turn 41:
+&gt; hc9eox
+Grade: 0 bull(s) and 6 cow(s).
+Turn 42:
+&gt; ch9eox
+Grade: 1 bull(s) and 5 cow(s).
+Turn 43:
+&gt; 9hceox
+Grade: 0 bull(s) and 6 cow(s).
+Turn 44:
+&gt; h9ceox
+Grade: 0 bull(s) and 6 cow(s).
+Turn 45:
+&gt; c9heox
+Grade: 2 bull(s) and 4 cow(s).
+Turn 46:
+&gt; 9cheox
+Grade: 1 bull(s) and 5 cow(s).
+Turn 47:
+&gt; 9ehcox
+Grade: 2 bull(s) and 4 cow(s).
+Turn 48:
+&gt; e9hcox
+Grade: 1 bull(s) and 5 cow(s).
+Turn 49:
+&gt; h9ecox
+Grade: 0 bull(s) and 6 cow(s).
+Turn 50:
+&gt; 9hecox
+Grade: 0 bull(s) and 6 cow(s).
+Turn 51:
+&gt; eh9cox
+Grade: 0 bull(s) and 6 cow(s).
+Turn 52:
+&gt; he9cox
+Grade: 1 bull(s) and 5 cow(s).
+Turn 53:
+&gt; hec9ox
+Grade: 1 bull(s) and 5 cow(s).
+Turn 54:
+&gt; ehc9ox
+Grade: 0 bull(s) and 6 cow(s).
+Turn 55:
+&gt; che9ox
+Grade: 1 bull(s) and 5 cow(s).
+Turn 56:
+&gt; hce9ox
+Grade: 0 bull(s) and 6 cow(s).
+Turn 57:
+&gt; ech9ox
+Grade: 1 bull(s) and 5 cow(s).
+Turn 58:
+&gt; ceh9ox
+Grade: 3 bull(s) and 3 cow(s).
+Turn 59:
+&gt; oeh9cx
+Grade: 2 bull(s) and 4 cow(s).
+Turn 60:
+&gt; eoh9cx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 61:
+&gt; hoe9cx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 62:
+&gt; ohe9cx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 63:
+&gt; eho9cx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 64:
+&gt; heo9cx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 65:
+&gt; 9eohcx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 66:
+&gt; e9ohcx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 67:
+&gt; o9ehcx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 68:
+&gt; 9oehcx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 69:
+&gt; eo9hcx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 70:
+&gt; oe9hcx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 71:
+&gt; oh9ecx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 72:
+&gt; ho9ecx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 73:
+&gt; 9ohecx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 74:
+&gt; o9hecx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 75:
+&gt; h9oecx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 76:
+&gt; 9hoecx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 77:
+&gt; 9heocx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 78:
+&gt; h9eocx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 79:
+&gt; e9hocx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 80:
+&gt; 9ehocx
+Grade: 2 bull(s) and 4 cow(s).
+Turn 81:
+&gt; he9ocx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 82:
+&gt; eh9ocx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 83:
+&gt; ch9oex
+Grade: 1 bull(s) and 5 cow(s).
+Turn 84:
+&gt; hc9oex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 85:
+&gt; 9choex
+Grade: 1 bull(s) and 5 cow(s).
+Turn 86:
+&gt; c9hoex
+Grade: 2 bull(s) and 4 cow(s).
+Turn 87:
+&gt; h9coex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 88:
+&gt; 9hcoex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 89:
+&gt; ohc9ex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 90:
+&gt; hoc9ex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 91:
+&gt; coh9ex
+Grade: 2 bull(s) and 4 cow(s).
+Turn 92:
+&gt; och9ex
+Grade: 1 bull(s) and 5 cow(s).
+Turn 93:
+&gt; hco9ex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 94:
+&gt; cho9ex
+Grade: 1 bull(s) and 5 cow(s).
+Turn 95:
+&gt; c9ohex
+Grade: 1 bull(s) and 5 cow(s).
+Turn 96:
+&gt; 9cohex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 97:
+&gt; oc9hex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 98:
+&gt; co9hex
+Grade: 1 bull(s) and 5 cow(s).
+Turn 99:
+&gt; 9ochex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 100:
+&gt; o9chex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 101:
+&gt; o9hcex
+Grade: 1 bull(s) and 5 cow(s).
+Turn 102:
+&gt; 9ohcex
+Grade: 1 bull(s) and 5 cow(s).
+Turn 103:
+&gt; ho9cex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 104:
+&gt; oh9cex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 105:
+&gt; 9hocex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 106:
+&gt; h9ocex
+Grade: 0 bull(s) and 6 cow(s).
+Turn 107:
+&gt; e9ochx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 108:
+&gt; 9eochx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 109:
+&gt; oe9chx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 110:
+&gt; eo9chx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 111:
+&gt; 9oechx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 112:
+&gt; o9echx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 113:
+&gt; c9eohx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 114:
+&gt; 9ceohx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 115:
+&gt; ec9ohx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 116:
+&gt; ce9ohx
+Grade: 2 bull(s) and 4 cow(s).
+Turn 117:
+&gt; 9ecohx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 118:
+&gt; e9cohx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 119:
+&gt; eoc9hx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 120:
+&gt; oec9hx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 121:
+&gt; ceo9hx
+Grade: 2 bull(s) and 4 cow(s).
+Turn 122:
+&gt; eco9hx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 123:
+&gt; oce9hx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 124:
+&gt; coe9hx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 125:
+&gt; co9ehx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 126:
+&gt; oc9ehx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 127:
+&gt; 9coehx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 128:
+&gt; c9oehx
+Grade: 1 bull(s) and 5 cow(s).
+Turn 129:
+&gt; o9cehx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 130:
+&gt; 9ocehx
+Grade: 0 bull(s) and 6 cow(s).
+Turn 131:
+&gt; hoce9x
+Grade: 1 bull(s) and 5 cow(s).
+Turn 132:
+&gt; ohce9x
+Grade: 1 bull(s) and 5 cow(s).
+Turn 133:
+&gt; choe9x
+Grade: 2 bull(s) and 4 cow(s).
+Turn 134:
+&gt; hcoe9x
+Grade: 1 bull(s) and 5 cow(s).
+Turn 135:
+&gt; oche9x
+Grade: 2 bull(s) and 4 cow(s).
+Turn 136:
+&gt; cohe9x
+Grade: 3 bull(s) and 3 cow(s).
+Turn 137:
+&gt; eohc9x
+Grade: 2 bull(s) and 4 cow(s).
+Turn 138:
+&gt; oehc9x
+Grade: 3 bull(s) and 3 cow(s).
+Turn 139:
+&gt; heoc9x
+Grade: 2 bull(s) and 4 cow(s).
+Turn 140:
+&gt; ehoc9x
+Grade: 1 bull(s) and 5 cow(s).
+Turn 141:
+&gt; ohec9x
+Grade: 1 bull(s) and 5 cow(s).
+Turn 142:
+&gt; hoec9x
+Grade: 1 bull(s) and 5 cow(s).
+Turn 143:
+&gt; hceo9x
+Grade: 1 bull(s) and 5 cow(s).
+Turn 144:
+&gt; cheo9x
+Grade: 2 bull(s) and 4 cow(s).
+Turn 145:
+&gt; ehco9x
+Grade: 1 bull(s) and 5 cow(s).
+Turn 146:
+&gt; heco9x
+Grade: 2 bull(s) and 4 cow(s).
+Turn 147:
+&gt; ceho9x
+Grade: 4 bull(s) and 2 cow(s).
+Turn 148:
+&gt; echo9x
+Grade: 2 bull(s) and 4 cow(s).
+Turn 149:
+&gt; ecoh9x
+Grade: 1 bull(s) and 5 cow(s).
+Turn 150:
+&gt; ceoh9x
+Grade: 3 bull(s) and 3 cow(s).
+Turn 151:
+&gt; oech9x
+Grade: 2 bull(s) and 4 cow(s).
+Turn 152:
+&gt; eoch9x
+Grade: 1 bull(s) and 5 cow(s).
+Turn 153:
+&gt; coeh9x
+Grade: 2 bull(s) and 4 cow(s).
+Turn 154:
+&gt; oceh9x
+Grade: 1 bull(s) and 5 cow(s).
+Turn 155:
+&gt; xceh9o
+Grade: 2 bull(s) and 4 cow(s).
+Turn 156:
+&gt; cxeh9o
+Grade: 3 bull(s) and 3 cow(s).
+Turn 157:
+&gt; exch9o
+Grade: 2 bull(s) and 4 cow(s).
+Turn 158:
+&gt; xech9o
+Grade: 3 bull(s) and 3 cow(s).
+Turn 159:
+&gt; cexh9o
+Grade: 4 bull(s) and 2 cow(s).
+Turn 160:
+&gt; ecxh9o
+Grade: 2 bull(s) and 4 cow(s).
+Turn 161:
+&gt; hcxe9o
+Grade: 2 bull(s) and 4 cow(s).
+Turn 162:
+&gt; chxe9o
+Grade: 3 bull(s) and 3 cow(s).
+Turn 163:
+&gt; xhce9o
+Grade: 2 bull(s) and 4 cow(s).
+Turn 164:
+&gt; hxce9o
+Grade: 2 bull(s) and 4 cow(s).
+Turn 165:
+&gt; cxhe9o
+Grade: 4 bull(s) and 2 cow(s).
+Turn 166:
+&gt; xche9o
+Grade: 3 bull(s) and 3 cow(s).
+Turn 167:
+&gt; xehc9o
+Grade: 4 bull(s) and 2 cow(s).
+Turn 168:
+&gt; exhc9o
+Grade: 3 bull(s) and 3 cow(s).
+Turn 169:
+&gt; hxec9o
+Grade: 2 bull(s) and 4 cow(s).
+Turn 170:
+&gt; xhec9o
+Grade: 2 bull(s) and 4 cow(s).
+Turn 171:
+&gt; ehxc9o
+Grade: 2 bull(s) and 4 cow(s).
+Turn 172:
+&gt; hexc9o
+Grade: 3 bull(s) and 3 cow(s).
+Turn 173:
+&gt; hecx9o
+Grade: 4 bull(s) and 2 cow(s).
+Turn 174:
+&gt; ehcx9o
+Grade: 3 bull(s) and 3 cow(s).
+Turn 175:
+&gt; chex9o
+Grade: 4 bull(s) and 2 cow(s).
+Turn 176:
+&gt; hcex9o
+Grade: 3 bull(s) and 3 cow(s).
+Turn 177:
+&gt; echx9o
+Grade: 4 bull(s) and 2 cow(s).
+Turn 178:
+&gt; cehx9o
+Grade: 6 bull(s) and 0 cow(s).
+Congratulations! You guessed the secret code.
 </pre>
 </span>
 </div>
@@ -211,7 +836,7 @@ Error: can't generate a secret number with a length of 11 because there aren't e
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at 8 maj 2023, 00:19:24</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at 10 maj 2023, 01:30:57</p>
 </div>
 </div>
 </body>
